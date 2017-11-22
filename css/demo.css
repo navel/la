@@ -69,7 +69,7 @@ body {
 /* Fade effect */
 .js body {
 	opacity: 0;
-	transition: opacity 0.3s;		
+	transition: opacity 0.3s;
 }
 
 .js body.render {
@@ -334,4 +334,36 @@ a.demo--current {
 	.codrops-links {
 		margin: 0;
 	}
+}
+
+.site-wrapper {
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@-webkit-keyframes spin {
+from {
+    -webkit-transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+    }
+}
+
+canvas {
+	width: 180% !important;
+	height: 180% !important;
+	left: -40% !important;
+	top: -40% !important;
+	-webkit-animation-name: spin;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	    -webkit-animation-duration: 15s;
+
 }
