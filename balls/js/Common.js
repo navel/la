@@ -1,1 +1,0 @@
-function addCommonUI( element, callback ) {}
