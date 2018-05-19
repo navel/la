@@ -13,4 +13,14 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+
+  <ul class="post-list">
+    {% for gallery in site.data.contentful.spaces.links.gallery %}
+    {% for images in gallery.images %}
+      <li>
+        <h2><img src="{{ images.url }}"></h2>
+      </li>
+    {% endfor %}
+    {% endfor %}
+  </ul>
 </div>
