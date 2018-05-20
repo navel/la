@@ -10,6 +10,10 @@ dl, dd, ol, ul, figure {
 
 
 
+.swiper-slide {
+    min-height: 500px;
+}
+
 /**
  * Basic styling
  */
@@ -94,13 +98,14 @@ a {
     color: $brand-color;
     text-decoration: none;
 
+
     &:visited {
         color: darken($brand-color, 15%);
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -204,3 +209,13 @@ pre {
         }
     }
 }
+
+
+   .swiper-container {
+     width: 100%;
+     height: 100%;
+   }
+   .swiper-slide {
+     background-position: center;
+     background-size: cover;
+   }
