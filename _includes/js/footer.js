@@ -23,17 +23,12 @@
 
   	// build scenes
   	new ScrollMagic.Scene({triggerElement: "#parallax1"})
-  					.setTween("#parallax1 > .post", {y: "-150%", ease: Linear.easeNone})
+  					.setTween("#parallax1 > .post", {y: "150%", ease: Linear.easeNone})
   					// .addIndicators()
   					.addTo(controller);
 
   	new ScrollMagic.Scene({triggerElement: "#parallax2"})
-  					.setTween("#parallax2 > .post", {y: "-100%", ease: Linear.easeNone})
-  					// .addIndicators()
-  					.addTo(controller);
-
-  	new ScrollMagic.Scene({triggerElement: "#parallax3"})
-  					.setTween("#parallax3 > .post", {y: "200%", ease: Linear.easeNone})
+  					.setTween("#parallax2 > .post", {y: "-150%", ease: Linear.easeNone})
   					// .addIndicators()
   					.addTo(controller);
   });
