@@ -7,13 +7,13 @@
 
 # Site settings
 title: navel
-email: woof@puppy.codes
+email: michael@navel.la
 description: > # this means to ignore newlines until "baseurl:"
-  Single Space Example using Jekyll and Contentful
+  A test site for collective autonomy
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: puppycodes
-github_username:  puppycodes
+url: "http://navel.la" # the base hostname & protocol for your site
+twitter_username:
+github_username:
 
   # Build settings
 markdown: kramdown

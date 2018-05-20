@@ -1,26 +1,21 @@
+<div id="slider">
 {% for gallery in site.data.contentful.spaces.links.gallery %}
-<!-- Slider main container -->
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
 
+<div class="swiper-container">
+    <div class="swiper-wrapper">
         {% for images in gallery.images %}
 
-     <div class="swiper-slide" style="background-image:url({{ images.url }})"></div>
+     <div class="swiper-slide" style="background-image:url({{ images.url }})">
+       <div class="caption">{{ images.title }}</div>
+     </div>
 
         {% endfor %}
 
 
     </div>
-    <!-- If we need pagination -->
+
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
 </div>
   {% endfor %}
+</div>
