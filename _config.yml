@@ -23,5 +23,3 @@ contentful:
     - links:
         space: 4gc9ip1z345v
         access_token: 4fc88ad86ecbbbf3a2e67ebe3f5ce3127d126b360752b13cf61a448b2b4d193b
-    - People:
-        Images: https://url.com/people.jpg
